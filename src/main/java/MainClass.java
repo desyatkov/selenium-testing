@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MainClass {
   public static void main(String[] args) {
-    System.setProperty("webdriver.gecko.driver", "/Users/sergey.desyatkov/Desktop/prod/seleniumtest/drivers/geckodriver");
+    System.setProperty("webdriver.gecko.driver", System.getProperty("user.dir") +"/drivers/geckodriver");
 
     WebDriver driver = new FirefoxDriver();
     driver.get("http://google.com");
